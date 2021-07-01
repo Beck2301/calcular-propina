@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
- 
+
 
 
   $(document).on('input', function () {
@@ -10,9 +10,15 @@ $(document).ready(function () {
     var nro1 = parseFloat($("#dato").val());
     var nro2 = parseFloat($("#dato2").val());
 
-    var suma = nro1 * nro2;
+
+    let suma = 0
+    let totalcuenta = 0
+    if (!isNaN(nro1)){
+      suma = nro1 * nro2;
+      totalcuenta = suma + nro1;
+    }
+
     $("#resultado").val(suma);
-    var totalcuenta = suma + nro1;
     $("#totalcuenta").val(totalcuenta);
 
 
