@@ -25,3 +25,21 @@ body{
     width: 80px;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .row{
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(var(--bs-gutter-y) * -1);
+        margin-right: calc(var(--bs-gutter-x) * -.5);
+        margin-left: calc(var(--bs-gutter-x) * -.5);
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .col-6{
+        width: 100% !important;
+    }
+}
+
